@@ -71,7 +71,6 @@ public class ExhaustiveSearch implements TSP {
     }
 
     private void findPermutations(List<Integer> str) {
-        // базовый вариант
         if (str == null || str.size() == 0) {
             return;
         }

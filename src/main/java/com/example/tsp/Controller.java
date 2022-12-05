@@ -83,8 +83,10 @@ public class Controller {
                 neighbourTimeField.setText(String.valueOf(nearestNeighbor.getTime()).concat(MILLIS));
                 exhaustivePathField.setText(exhaustiveSearch.getMinimalPath().getView());
                 exhaustiveTimeField.setText(String.valueOf(exhaustiveSearch.getTime()).concat(MILLIS));
-                errorField.setText(String.valueOf(Math.abs(exhaustiveSearch.getMinimalPath().getLength() - nearestNeighbor.getMinimalPath().getLength())));
-                timeField.setText(String.valueOf(exhaustiveSearch.getTime() - nearestNeighbor.getTime()).concat(MILLIS));
+                errorField.setText(String.valueOf(Math.abs(exhaustiveSearch.getMinimalPath().getLength()
+                        - nearestNeighbor.getMinimalPath().getLength())));
+                timeField.setText(String.valueOf(exhaustiveSearch.getTime()
+                        - nearestNeighbor.getTime()).concat(MILLIS));
             }
         });
 
